@@ -1,0 +1,108 @@
+/* Reset Css */
+* , *::after , *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --white-color: #fff;
+    --grey-color: #b3b3b3;
+    --black-color: #121212;
+    --dark-color: #000;
+    --brown-color: #423a3a;
+    --dark-brown: #221e1e;
+    --green-color: #1ed760;
+    --black-grey: #232323;
+    --height-icon: 24px;
+    --control--navigation: 85px
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+.icon {
+    height: var(--height-icon);
+    filter: invert(97%) sepia(0%) saturate(68%) hue-rotate(141deg) brightness(78%) contrast(81%);
+}
+
+.opa-7 {
+    opacity: .7;
+}
+.one-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: unset;
+    word-break: break-all;
+}
+.hide-scrollbar-thumb::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+.hide-scrollbar-thumb:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+.btn {
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.btn .icon {
+    height: 16px;
+}
+.btn-toggle {
+    background-color: var(--white-color);
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+.btn-toggle .icon {
+    height: 20px;
+    filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(310deg) brightness(97%) contrast(105%);
+}
+.active span {
+    color: var(--green-color);
+}
+.active h5 {
+    color: var(--green-color);
+    opacity: .9;
+}
+.playing .control-pause {
+    display: inline-block;
+}
+.playing .control-play {
+    display: none;
+}
+.control-play {
+    display: inline-block;
+}
+.control-pause {
+    display: none;
+}
+
+.active .icon {
+    filter: invert(87%) sepia(8%) saturate(7420%) hue-rotate(76deg) brightness(90%) contrast(87%);
+}
+.muted-icon {
+    display: none;
+}
+.muted .muted-icon {
+    display: block;
+}
+.muted .unmuted-icon {
+    display: none;
+}
